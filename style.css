@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	background-color: black;
+}
+#main-page{
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	background-color: black;
+}
+#page{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	margin-top: 150px;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+#player{
+	transition: .5s;
+}
+
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+
+
+
+.block{
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+}
