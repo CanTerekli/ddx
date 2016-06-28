@@ -22,6 +22,47 @@
 }
 
 
+
+	
+	
+</script>
+<script>
+
+
+window.onload = function() {
+	
+		
+	setInterval(function() {
+    	var random = Math.floor(Math.random() * (0 - 5 + 1)) + 0;
+		
+		var spawndiv = document.getElementById("main-page");
+		var ddiv = document.createElement("div");
+		var d = document.createElement("div");
+		if(random == -1){
+			d.className = "enemy-up";	
+		}
+		if(random == -2){
+			d.className = "enemy-down";
+		}
+		if(random == -3){
+			d.className = "enemy-right";
+		}
+		if(random == -4){
+			d.className = "enemy-left";
+		}
+		ddiv.className = "ddiv";
+		spawndiv.appendChild(ddiv);
+		ddiv.appendChild(d);
+		for(var i = 0 ; i < 800; i++){
+			setTimeout(function() { ddiv.style.top = i + "px"; }, 1000);
+			
+		}	
+		setTimeout(function() { ddiv.parentNode.removeChild(ddiv); }, 5000);
+	}, 3000);
+	 
+
+};
+
 </script>
 
 </head>

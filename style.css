@@ -24,7 +24,7 @@ body{
 	border-top-color: white;
 	border-top-style: solid;
 	border-top-width: 5px;
-	
+	z-index: 100;
 
 }
 #score{
@@ -68,11 +68,48 @@ body{
 	border-bottom: 50px solid transparent;
 }
 
-
-
-.block{
-	background-color: white;
-	width: 300px;
-	height: 300px;
-	position: absolute;
+.ddiv{
+	width: 100px;
+	height: 100px;
+	
+	
+	transition: 3s;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	z-index: 0;
+}
+.enemies{
+	
+}
+.enemy-up{
+	
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid white;
+}
+.enemy-down{
+	
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid white;
+}
+.enemy-left{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid white;
+	border-bottom: 50px solid transparent;
+}
+.enemy-right{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid white;
+	border-bottom: 50px solid transparent;
 }
